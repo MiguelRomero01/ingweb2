@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concesionario</title>
+
+    <!--styles-->
     <link rel="stylesheet" href="styles/indes.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <!--enlace a boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul class="nav-menu">
-            <li>
-                <a id="Ferrarinav" target="_blank" href="html/Ferrari.html">Ferrari</a>
-                </li>
-                <li>
-                <a  id="linkLambo" target="_blank" href="html/Lamborghini.html">Lamborghini</a>
-                </li>
-                <li>
-                <a id="Knav" target="_blank" href="html/Koenigsegg.html">Koenigsegg</a>
-            </li>
+  <div id="navBar-placeholder">
+    <nav id="navbarMenu">
+      <ul id="navList">
+          <li class="nav-Items"><a href="#carouselExampleAutoplaying" class="links-Navbar"> Home</a></li>
+          <li class="nav-Items"><a href="#dynamic-image-text-section" class="links-Navbar"> Acerca de</a></li>
+          <li class="nav-Items"><a href="#sales-container" class="links-Navbar"> En venta</a></li>
+          <li class="nav-Items"><a href="#contact-container" class="links-Navbar"> Contacto</a></li>
+
+          <div class="nav-right">
+              <li class="nav-Items"><a href="../login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+              <li class="nav-Items"><a href="views/registro.ejs" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
+              </li>
+          </div>
         </ul>
-    </nav>
+      </nav>
+  </div>
 
-
+    <!--Carrusel-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
