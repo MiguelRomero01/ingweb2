@@ -17,6 +17,22 @@ h1{
     border-radius: 40px;
     background-color: #ddd;
 }
+
+#navbarMenu{
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#navbarMenu.scrolled{
+
+background-color: #000;
+
+}
+
+
+
 #Parrafo1{
     text-align: center;
     border-radius: 30px;
