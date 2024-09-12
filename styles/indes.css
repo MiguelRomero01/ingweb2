@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient( -90deg,#000,#ddd);
+    background: #ddd;
     margin: 0;
     padding: 0;
 }
@@ -125,10 +125,6 @@ h1{
 
     height: auto;
     
-}
-video{
-    width: 100%;
-    height: auto;
 }
 
 
