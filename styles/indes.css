@@ -30,8 +30,18 @@ h2,p{
 }
 
 
+.card-img-top{
+    height: 35vh;
+}
 
+.card-link{
 
+    font-size: 150%;
+
+}
+.card-text{
+    height: 18vh;
+}
 
   video {
     min-width: 100%;
