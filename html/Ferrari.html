@@ -31,10 +31,12 @@
 
     <div class="d-flex justify-content-between flex-wrap p-5">
         <div class="card" style="width: 33rem;">
-          <img src="https://www.supercars.net/blog/wp-content/uploads/2019/04/Jesko6.jpg" class="card-img-top" alt="Imagen Carro Jesko">
+          <img src="https://www.duna.cl/media/2019/06/Ferrari-Enzo-jante-en-alu.jpg" class="card-img-top" alt="Imagen Carro Enzo Ferrari">
           <div class="card-body">
-            <h5 class="card-title">Koenigsegg Jesko</h5>
-            <p class="card-text"> Automóvil superdeportivo con motor central-trasero de producción limitada, producido por el fabricante sueco Koenigsegg, que fue presentado en el Salón del Automóvil de Ginebra de 2019. El automóvil reemplaza al Agera. El nombre Jesko es un homenaje al padre del fundador de la compañía: Jesko von Koenigsegg.​</p>
+            <h5 class="card-title">El Ferrari Enzo</h5>
+            <p class="card-text"> El Ferrari Enzo es un automóvil superdeportivo berlinetta de dos puertas diédricas biplaza, producido por el fabricante italiano Ferrari entre 2002 y 2004.​ Inicialmente se pensó en una producción limitada de 349 unidades, pero en realidad se construyeron 400.
+
+              Su precio base cuando nuevo era de US$652 890 ($936 660 en 2024),​ mientras que su precio actual puede llegar a 3 000 000 €.​</p>
           </div>
           <ul class="list-group list-group-flush"></ul>
             
@@ -61,10 +63,10 @@
         </div>
     
         <div class="card" style="width: 33rem;">
-          <img src="https://i.ytimg.com/vi/becksv7ZprM/maxresdefault.jpg" class="card-img-top" alt="Imagen Carro Revuelto">
+          <img src="https://www.amarisupercars.com/blobs/stock/1241421/images/5aea709b-4c0c-4afd-b7b6-afd748a4e1f6.jpg?width=2000&height=1333" class="card-img-top" alt="Imagen Carro SF90 Spider">
           <div class="card-body">
-            <h5 class="card-title">Lamborghini Revuelto</h5>
-            <p class="card-text">El Lamborghini Revuelto (reˈbwelto) es un automóvil superdeportivo con motor central-trasero montado longitudinalmente y de tracción en las cuatro ruedas, producido por el fabricante italiano Lamborghini desde la primavera de 2023.</p>
+            <h5 class="card-title">SF90 Spider</h5>
+            <p class="card-text">El SF90 Spider es la variante cabrio del Ferrari SF90 Stradale. Hereda su misma unidad de potencia. Alcanza los 340 kilómetros/hora y acelera de 0 a 100 en 2,5 segundos, como el coupé. Los 100 kilos extra derivados del techo rígido sí se hace patente en la aceleración del 0-200, que es 0,3 segundos más lenta, está disponible a partir de unos 545.000 euros.</p>
           </div>
           <ul class="list-group list-group-flush"></ul>
             
@@ -76,6 +78,24 @@
       </div>
 
 
-      
+      <!-- chat bot -->
+<script>
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+      s.addEventListener('load', function() {
+        myLandbot = new Landbot.Popup({
+          configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2607370-E2I3HBE02WYCFUGC/index.json',
+        });
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+  </script>
 </body>
 </html>
