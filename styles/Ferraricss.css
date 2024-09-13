@@ -48,7 +48,7 @@ body {
     margin-bottom: 6px;
 }
 
-<<<<<<< HEAD
+
 .card-img-top{
     height: 35vh;
 }
@@ -76,13 +76,13 @@ h2{
     text-align: center;
     
     text-shadow: 2px 2px rgb(255, 241, 43);
-    
+}
 
-=======
+
 .image-text .text{
     
     font-size: 2em;
     color: rgb(251, 255, 0);
     text-shadow: 3px 3px 3px rgb(141, 137, 137); 
->>>>>>> 2f9d88d87d6a95b20886dd3f55424d990e9e54bc
+
 }
