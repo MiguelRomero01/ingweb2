@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koenigsegg CS</title>
-    <link rel="stylesheet" href="/styles/Ferraricss.css">
+    <link rel="stylesheet" href="/styles/MarcasDeCarros.css">
     <link rel="stylesheet" href="/layouts/navbar/navbarCars.css">
 </head>
 <body>
@@ -12,49 +12,36 @@
     <div id="navBar-placeholder"></div>
     <script src="../layouts/navbar/navbarCars.js"></script>
 
-    <h2 id="Jesko"; style="text-align: center;" >Jesko:</h2>
-    
-    <p style="text-align: center;" >La gama de modelos Jesko lleva el nombre de Jesko von Koenigsegg,
-        el padre del fundador y CEO de la empresa, Christian von
-        Koenigsegg.
-        Cuentan con un motor V8 biturbo de 5.0 litros rediseñado
-        produciendo 1280 CV en gasolina estándar y 1600 CV en E85
-        biocombustible (en algunos mercados) junto con el nuevo y revolucionario
-        Transmisión de velocidad a la luz Koenigsegg de 9 velocidades (LST)
-        sistema. La aerodinámica avanzada ofrece más de 1000 kg de
-        carga aerodinámica, lo que la convierte en el arma de pista definitiva.</p>
-    <img style="width: 100%;" src="https://www.supercars.net/blog/wp-content/uploads/2019/04/Jesko6.jpg" alt="Imagen del carro 'Jesko'">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h2  id="Regera"; style="text-align: center;"> Regera:</h2>
-    <p style="text-align: center;">El Regera fue diseñado específicamente para ser un megacoche de lujo
-        alternativa al tradicional extremo de Koenigsegg, ligero,
-        Coches de carreras. Combina un potente motor biturbo
-        Motor de combustión V8 con tres motores eléctricos y
-        Potencia de batería de última generación a través de la nueva tecnología de tren motriz
-        llamado Koenigsegg Direct Drive.
+    <!--imagen y texto prinicpal-->
+    <div id="mainImage-header">
+        <img id="img-header" src="../assets/koegnisegg/Koenigsegg_TheSquad_3200x2000-UPDATED.jpg">
         
-        Mientras que los Koenigseggs tradicionales siempre han tenido
-        niveles de practicidad, comodidades y características, nuestra
-        El objetivo principal siempre ha sido fabricar los coches más rápidos</p>
-    <img style="width: 100%;" src="https://wallpaperaccess.com/full/42418.jpg" alt="Imagen del carro 'Regera'">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h2 style="text-align: center;" id="One:1";>One:1:</h2>
-    <p style="text-align: center;">
-El icónico Koenigsegg One:1 fue el primero homologado
-coche de producción en el mundo, una relación peso-potencia de 1:1 - el
-Relación de "ensueño" que antes se pensaba imposible en un mercado legal
-coche deportivo. De ahí el nombre Uno:1.
+        <div class="image-text">
+            <h1 class="title">Koenigsegg</h1>
+            <span class="text">Christian von Koenigsegg</span>
+        </div>
+    </div>
 
-Y con un megavatio de potencia, también fue el primero del mundo
-Megacoche de producción.
+<!--chatbot-->
+<script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+        if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+            myLandbot = new Landbot.Popup({
+                configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2607370-E2I3HBE02WYCFUGC/index.json',
+            });
+        });
+        
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    }
+}
+</script>
 
-Las especificaciones sin precedentes del One:1 aumentaron el rendimiento
-expectativas a nuevas alturas. Presentaba soluciones innovadoras
-que mejoró el rendimiento en pista y la velocidad máxima sin
-Alejándose de la cotidianidad
-    </p>
-    <img style="width: 100%;" src="https://www.supercars.net/blog/wp-content/uploads/2020/10/2014-Koenigsegg-Agera-One-1-010-2000-scaled.jpg" alt="Imagen del carro 'One:1'">
-
-    <a href="index.html">Pagina de Inicio</a>
 </body>
 </html>
