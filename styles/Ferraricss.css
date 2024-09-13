@@ -1,48 +1,26 @@
-body{
-    background: linear-gradient(black, rgb(136, 0, 0));
-    color: aliceblue;
-}
-h1{
-    text-align: center;
-    text-shadow: 4px 2px 4px red;
-    text-decoration: underline;
-    font-size: 60px;
-}
-
-#Ferrarilogo{
-    width: auto;
-    display: flex;
-    height: 100px; 
-    box-shadow: 0 0 30px 6px red;
-    margin: auto;
-}
-
-.listaaa {
-    text-align: center;
-    margin: 3% 0 ;
+body {
     padding: 0;
-    list-style-type: none;
-    font-size:25px;
+    margin: 0;
 }
 
-.ultext{
-    color: rgb(189, 11, 11);
-    text-decoration: none;
+#mainImage-header {
+    position: relative;
+    width: 100%;
+    height: 67vh;
 }
 
-p {
+#mainImage-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 30%; /* Ajusta este valor para mover el texto hacia la izquierda o derecha */
+    transform: translate(-50%, -50%);
+    color: white; /* O el color que desees para que el texto se vea bien sobre la imagen */
+    font-size: 2em; /* Ajusta el tamaño del texto si es necesario */
     text-align: center;
-    font-size: 25px;
-    margin: 3% 10%;
 }
-
-h2{
-    text-align: center;
-    font-size: 40px;
-}
-h4{
-    text-align: center;
-    font-size: 30px;
-    margin: 3% 15%;
-}
-
