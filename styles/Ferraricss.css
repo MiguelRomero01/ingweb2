@@ -1,3 +1,7 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+/*Ferrari: font-family: "Protest Guerrilla", sans-serif;*/
+
 body {
     padding: 0;
     margin: 0;
@@ -32,15 +36,19 @@ body {
     top: 40%;
     left: 15%; 
     transform: translate(-50%, -50%);
-    color: red;
-    text-shadow: 3px 3px 3px rgb(170, 170, 170); 
     text-align: center;
 }
 
 .image-text .title{
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 1vw;
     font-size: 4em;
+    color: #ff0000;
+    text-shadow: 3px 3px 3px rgb(170, 170, 170); 
+    margin-bottom: 6px;
 }
 
+<<<<<<< HEAD
 .card-img-top{
     height: 35vh;
 }
@@ -70,4 +78,11 @@ h2{
     text-shadow: 2px 2px rgb(255, 241, 43);
     
 
+=======
+.image-text .text{
+    
+    font-size: 2em;
+    color: rgb(251, 255, 0);
+    text-shadow: 3px 3px 3px rgb(141, 137, 137); 
+>>>>>>> 2f9d88d87d6a95b20886dd3f55424d990e9e54bc
 }
