@@ -1,6 +1,6 @@
 /*Fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
-/*Ferrari: font-family: "Protest Guerrilla", sans-serif;*/
+/*hearders: font-family: "Protest Guerrilla", sans-serif;*/
 
 body {
     padding: 0;
@@ -49,27 +49,6 @@ body {
 }
 
 
-.card-img-top{
-    height: 35vh;
-}
-
-.card-link{
-
-    font-size: 150%;
-
-}
-.card-text{
-    height: 18vh;
-}
-
-.card-title{
-    text-align: center;
-    padding: 3%;
-}
-
-.card-body{
-    text-align: center;
-}
 
 h2{
     padding-top: 2%;

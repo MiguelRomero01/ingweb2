@@ -1,19 +1,41 @@
+
+.card{
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.card-img-top{
+    height: 35vh;
+}
+
+.card-link{
+    font-size: 150%;
+
+}
+.card-text{
+    height: 18vh;
+}
+
+.card-title{
+    padding: 3%;
+}
+
 @keyframes showprojects-left{
-     from{
-         transform: translatex(700%);
-         opacity: 0;
-     }
- 
-     to{
-         opacity: 1; scale: 100%;
-     }
- }
+    from{
+        transform: translatex(300%);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1; scale: 100%;
+    }
+}
 
 #cardAnimation{
-     object-fit: cover;
+    object-fit: cover;
     view-timeline-name: --reveal;
     animation-fill-mode: both;
     animation-timeline: --reveal;
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 0% cover 50%;
     animation-name: showprojects-left;
 }
