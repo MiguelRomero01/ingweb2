@@ -1,0 +1,19 @@
+@keyframes showprojects-left{
+     from{
+         transform: translatex(700%);
+         opacity: 0;
+     }
+ 
+     to{
+         opacity: 1; scale: 100%;
+     }
+ }
+
+#cardAnimation{
+     object-fit: cover;
+    view-timeline-name: --reveal;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+    animation-name: showprojects-left;
+}
