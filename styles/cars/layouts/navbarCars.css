@@ -1,0 +1,75 @@
+/*containers*/
+#navBar-placeholder {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+#navbarMenu{
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#navbarMenu.scrolled{
+    background-color: #000;
+}
+
+#navbarMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 50px; 
+}
+ 
+#navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    align-items: center; 
+    width: 100%; 
+}
+
+/*items*/
+ul .nav-Items {
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 0.1vh 2vw;
+    transition: all 0.2s linear;
+    display: flex;
+    align-items: center; 
+}
+
+/*links*/
+.links-Navbar {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+/*Efecto hover*/
+.nav-Items:hover {
+    scale: 1.1;
+}
+
+.nav-right {
+    margin-left: auto; 
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    ul .nav-Items {
+        font-size: 8px;
+    }
+}
