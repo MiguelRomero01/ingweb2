@@ -20,22 +20,24 @@
     padding: 3%;
 }
 
-@keyframes showprojects-left{
-    from{
-        transform: translatex(300%);
+@keyframes showprojects-left {
+    from {
+        transform: translateX(900%); /* Ajusta el valor según sea necesario */
         opacity: 0;
     }
-
-    to{
-        opacity: 1; scale: 100%;
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
-#cardAnimation{
+
+#cardAnimation {
     object-fit: cover;
     view-timeline-name: --reveal;
     animation-fill-mode: both;
     animation-timeline: --reveal;
     animation-range: entry 0% cover 50%;
     animation-name: showprojects-left;
+    will-change: transform, opacity;
 }
