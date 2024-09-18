@@ -49,20 +49,40 @@ body {
     margin-bottom: 6px;
 }
 
-
-
 h2{
     padding-top: 2%;
     text-align: center;
-    
     text-shadow: 2px 2px rgb(255, 241, 43);
 }
 
 
 .image-text .text{
-    
     font-size: 2em;
     color: rgb(251, 255, 0);
     text-shadow: 3px 3px 3px rgb(141, 137, 137); 
+}
 
+#ShowMore-btn{
+    margin-top: 20px;
+    border-color: white;
+    background-color: transparent;
+    transform: rotate(45deg);
+    transition: all 0.25s ease-in; 
+    border: 2px solid white; 
+}
+
+#ShowMore-btn:hover {
+    background-color: white;
+    scale: 1.1;
+}
+
+#arrow-down {
+    color: white; 
+    transition: all 0.25s ease-in; 
+    transform: rotate(-45deg);
+    font-size: 35px;
+}
+
+#ShowMore-btn:hover #arrow-down {
+    color: black;
 }
