@@ -1,38 +1,45 @@
 
-.card-body{
+.card-body {
     text-align: center;
 }
 
-.card{
+.card {
     margin-bottom: 2em;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ajusta la altura para que el contenido se distribuya mejor */
 }
 
-.card-img-top{
+.card-img-top {
     height: 35vh;
+    object-fit: cover;
 }
 
-.card-link{
+.card-link {
     font-size: 150%;
     text-align: center;
-
 }
-.card-text{
-    height: 30vh;
+
+.card-text {
+    height: 40vh;
     text-align: left;
     margin: 3%;
+    overflow: hidden; /* Evita el desbordamiento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    word-wrap: break-word; /* Permite cortar las palabras si son muy largas */
+    font-size: calc(1rem + 0.5vw); /* Escala el texto basado en el tamaño de la ventana */
+    line-height: 1.5;
 }
 
-
-
-.card-title{
+.card-title {
     padding: 3%;
-   
 }
 
 @keyframes showprojects-left {
     from {
-        transform: translateX(900%); /* Ajusta el valor según sea necesario */
+        transform: translateX(900%);
         opacity: 0;
     }
     to {
