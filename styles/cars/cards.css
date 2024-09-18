@@ -1,7 +1,11 @@
 
-.card{
-    margin-bottom: 5em;
+.card-body{
     text-align: center;
+}
+
+.card{
+    margin-bottom: 2em;
+    text-align: left;
 }
 
 .card-img-top{
@@ -10,14 +14,20 @@
 
 .card-link{
     font-size: 150%;
+    text-align: center;
 
 }
 .card-text{
-    height: 18vh;
+    height: 30vh;
+    text-align: left;
+    margin: 3%;
 }
+
+
 
 .card-title{
     padding: 3%;
+   
 }
 
 @keyframes showprojects-left {
