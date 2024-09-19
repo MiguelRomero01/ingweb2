@@ -4,7 +4,6 @@
     top: 0;
     z-index: 2;
     margin: 0;
-    padding: 0;
 }
 
 #navbarMenu{
@@ -12,10 +11,11 @@
     z-index: 100;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    padding: 35px;
 }
 
-#navbarMenu.scrolled {
-    background-color: #000; 
+#navbarMenu.scrolled{
+    background-color: #000;
 }
 
 #navbarMenu {
@@ -73,3 +73,4 @@ ul .nav-Items {
         font-size: 8px;
     }
 }
+
