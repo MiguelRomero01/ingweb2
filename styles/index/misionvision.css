@@ -1,0 +1,89 @@
+.bodycar {
+    background-color: #f5f5f5;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    width: 90%;
+    
+    border-radius: 10px;
+  }
+  
+  .image-section-ford{
+    flex: 1;
+    position: relative;
+    height: 50vh;
+  }
+
+  .image-section-ford img {
+    width: 110%;
+    height: auto;
+    clip-path: polygon(100% 0, 30% 0, 0 100%, 100% 100%); 
+    border-radius: 10px;
+  }
+
+
+  .image-section {
+    flex: 1;
+    position: relative;
+    height: 50vh;
+  }
+  
+  .image-section img {
+    width: 125%;    
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); 
+    border-radius: 10px;
+  }
+  
+  .car-text {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .car-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .car-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .car-text {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+  
+    .image-section img {
+        clip-path: none;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .image-section-ford img {
+        clip-path: none;
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
+  
