@@ -9,14 +9,6 @@ h2,p{
     margin: 5% 10%;
 }
 
-.h1{
-    text-align: center;
-    width: 33%;
-    margin: 30% 33%;
-    border: 3px solid #000;
-    border-radius: 40px;
-    background-color: #ddd;
-}
 
 #Parrafo1{
     text-align: center;
@@ -79,3 +71,26 @@ h2,p{
     padding: 50px;
     background-color: white;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+
+.h1 {
+    font-family: 'Orbitron', sans-serif; 
+            font-size: 6rem; 
+            background: linear-gradient(90deg, #ff8a00, #e52e71); 
+            margin-top: 3%;
+            color: transparent; 
+            text-transform: uppercase;
+            letter-spacing: 10px; 
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate; 
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #e52e
+    }}
