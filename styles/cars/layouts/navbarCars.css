@@ -7,7 +7,7 @@
 }
 
 #logo-icon-navbar{
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 #navbarMenu{
@@ -15,7 +15,7 @@
     z-index: 100;
     background-color: transparent;
     transition: background-color 0.3s ease;
-    padding-top: 1vh;
+    padding: 30px;
 }
 
 #navbarMenu.scrolled{
