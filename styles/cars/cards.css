@@ -1,4 +1,6 @@
 
+
+
 .card-body {
     text-align: center;
 }
@@ -25,16 +27,16 @@
 .card-text {
     height: 40vh;
     text-align: left;
-    margin: 3%;
+    margin: 2%;
     overflow: hidden; /* Evita el desbordamiento */
-    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
     word-wrap: break-word; /* Permite cortar las palabras si son muy largas */
-    font-size: calc(1rem + 0.5vw); /* Escala el texto basado en el tamaño de la ventana */
+    font-size: 100%; /* Escala el texto basado en el tamaño de la ventana */
     line-height: 1.5;
 }
 
 .card-title {
     padding: 3%;
+    font-size: 200%;
 }
 
 @keyframes showprojects-left {
