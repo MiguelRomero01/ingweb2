@@ -33,8 +33,7 @@
         </div>
     </div>
 
-
-<h2 style="color: red;">Nuestros Ferraris</h2>
+    <h2 style="color: red;">Nuestros Ferraris</h2>
 
     <!-- cards ferrari -->
     <div id="Card-container">
@@ -44,8 +43,8 @@
             <img src="https://www.duna.cl/media/2019/06/Ferrari-Enzo-jante-en-alu.jpg" class="card-img-top" alt="Imagen Carro Enzo Ferrari">
             <div class="card-body">
               <h5 class="card-title">Ferrari Enzo Ferrari (2002-2004)</h5>
-            
               <ul class="card-text">
+<<<<<<< Updated upstream
                
                   <li><strong>Motor:</strong> V12 de 6.0 litros, con una potencia de 660 CV (485 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> 3.14 segundos.</li>
@@ -57,22 +56,27 @@
                 
                 
             </ul>
+=======
+                <li>Motor: V12 de 6.0 litros, con una potencia de 660 CV (485 kW).</li>
+                <li>Aceleración 0-100 km/h: 3.14 segundos.</li>
+                <li>Velocidad máxima: Aproximadamente 350 km/h.</li>
+                <li>Transmisión: Automática secuencial de 6 velocidades con levas en el volante.</li>
+                <li>Peso: 1,365 kg.</li>
+                <li>Producción: Solo 400 unidades producidas.</li>
+              </ul>
+>>>>>>> Stashed changes
             </div>
-            <ul class="list-group list-group-flush" style="background-color: black;"></ul>
-              
-            </ul>
             <div class="card-body">
-              <button class="add-to-cart" data-name="Producto 1" data-price="10">Añadir al Carrito</button>
+              <button class="add-to-cart" data-name="Ferrari Enzo" data-price="10">Añadir al Carrito</button>
             </div>
           </div>
-      
       
           <div class="card" id="cardAnimation" style="width: 33rem;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Ferrari_LaFerrari_Front_(17805613483).jpg" class="card-img-top" alt="Imagen Carro La Ferrari">
             <div class="card-body">
               <h5 class="card-title">LaFerrari (2013-2016)</h5>
-            
               <ul class="card-text">
+<<<<<<< Updated upstream
                 
                   <li><strong>Motor:</strong> Híbrido V12 de 6.3 litros más un motor eléctrico, combinando una potencia total de 963 CV (708 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> Menos de 3 segundos.</li>
@@ -82,12 +86,16 @@
                   <li><strong>Diseño:</strong> Primer Ferrari híbrido de la historia. Utiliza un sistema KERS (similar al de la F1) para recuperar energía. Solo se fabricaron 499 unidades, más una adicional subastada para caridad.</li>
                 
                 </ul>
+=======
+                <li>Motor: Híbrido V12 de 6.3 litros más un motor eléctrico, combinando una potencia total de 963 CV (708 kW).</li>
+                <li>Aceleración 0-100 km/h: Menos de 3 segundos.</li>
+                <li>Velocidad máxima: 350 km/h.</li>
+                <li>Transmisión: Automática de doble embrague con 7 velocidades.</li>
+              </ul>
+>>>>>>> Stashed changes
             </div>
-            <ul class="list-group list-group-flush " style="background-color: black;"></ul>
-              
-            </ul>
             <div class="card-body">
-              <button class="add-to-cart" data-name="Producto 2" data-price="15">Añadir al Carrito</button>
+              <button class="add-to-cart" data-name="LaFerrari" data-price="15">Añadir al Carrito</button>
             </div>
           </div>
       
@@ -95,8 +103,8 @@
             <img src="https://www.amarisupercars.com/blobs/stock/1241421/images/5aea709b-4c0c-4afd-b7b6-afd748a4e1f6.jpg?width=2000&height=1333" class="card-img-top" alt="Imagen Carro SF90 Spider">
             <div class="card-body">
               <h5 class="card-title">Ferrari SF90 Spider (2020-presente)</h5>
-            
               <ul class="card-text">
+<<<<<<< Updated upstream
                 
                   <li><strong>Motor:</strong> Híbrido enchufable, con un motor V8 biturbo de 4.0 litros y tres motores eléctricos, que producen un total de 1,000 CV (735 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> 2.5 segundos.</li>
@@ -109,18 +117,34 @@
             <ul class="list-group list-group-flush" style="background-color: black;"></ul>
               
             </ul>
+=======
+                <li>Motor: Híbrido enchufable, con un motor V8 biturbo de 4.0 litros y tres motores eléctricos, que producen un total de 1,000 CV (735 kW).</li>
+                <li>Aceleración 0-100 km/h: 2.5 segundos.</li>
+                <li>Velocidad máxima: 340 km/h.</li>
+              </ul>
+            </div>
+>>>>>>> Stashed changes
             <div class="card-body">
-              <button class="add-to-cart" data-name="Producto 2" data-price="15">Añadir al Carrito</button>
+              <button class="add-to-cart" data-name="SF90 Spider" data-price="20">Añadir al Carrito</button>
             </div>
           </div>
-        </div>
+
       </div>
-<!--chatbot-->
-<script src="/scripts/chatbot/chatbot.js"></script>
-<script src="/scripts/navscroll.js"></script>
+    </div>
+    
+    <!-- Carrito de Compras -->
+    <div class="cart-items" id="cart-items" style="display:none;">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+    <button id="clear-cart">Vaciar Carrito</button>
+  </div>
 
-<!--carrto de compras-->
-<script src="/scripts/carrito-compras/carrito-compras.js"></script>
+    <!-- chatbot -->
+    <script src="/scripts/chatbot/chatbot.js"></script>
+    <script src="/scripts/navscroll.js"></script>
 
+    <!-- carrito de compras -->
+    <script src="/scripts/carrito-compras/carrito-compras.js"></script>
 </body>
 </html>
