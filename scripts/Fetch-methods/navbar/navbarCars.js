@@ -4,3 +4,4 @@ fetch('/layouts/components/navbarCars.html')
         document.getElementById('navBar-placeholder').innerHTML = data;
     })
     .catch(error => console.error('Error al cargar el navbar:', error));
+

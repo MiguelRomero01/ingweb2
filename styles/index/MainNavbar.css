@@ -14,8 +14,8 @@
     transition: background-color 0.3s ease;
 }
 
-#navbarMenu.scrolled{
-    background-color: #000;
+#navbarMenu.scrolled {
+    background-color: #000; 
 }
 
 #navbarMenu {
