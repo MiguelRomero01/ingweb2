@@ -1,4 +1,36 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea las cards al inicio */
+}
 
+.card {
+    flex: 0 1 calc(50% - 20px); /* 50% ancho con margen */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.card-container > .card {
+    flex-basis: calc(50% - 20px); /* Toma el 50% del ancho */
+}
+
+.card-container > .card:last-child {
+    flex-basis: auto; /* Se ajusta automáticamente si hay solo una card */
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* En pantallas pequeñas, 1 card por fila */
+    }
+}
+
+
+.carrito {
+    width: 30%;
+    margin-left: 20px;
+    position: sticky;
+    top: 20px;
+}
 
 
 .card-body {
@@ -41,7 +73,7 @@
 
 @keyframes showprojects-left {
     from {
-        transform: translateX(900%);
+        transform: translateX(-900%);
         opacity: 0;
     }
     to {
