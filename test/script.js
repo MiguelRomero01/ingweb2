@@ -28,6 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
         cartTotalElement.textContent = total.toFixed(2);
     }
 
+    
+    // Usar event delegation en el contenedor padre
+    const cardsContainer = document.getElementById('cards-container');
+    cardsContainer.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('add-to-cart')) {
+            const productName = e.target.getAttribute('data-name');
+            const productPrice = e.target.getAttribute('data-price');
+            addToCart(productName, productPrice);
+        }
+    });
+    
     // Maneja los clics en el botón "Añadir al carrito"
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', function() {
