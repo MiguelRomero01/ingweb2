@@ -57,7 +57,7 @@
 }
 
 .card-text {
-    height: 40vh;
+    height: 100%;
     text-align: left;
     margin: 2%;
     overflow: hidden; /* Evita el desbordamiento */
@@ -90,4 +90,12 @@
     animation-range: entry 0% cover 50%;
     animation-name: showprojects-left;
     will-change: transform, opacity;
+}
+
+.boton-item{
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
