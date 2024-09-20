@@ -1,3 +1,23 @@
+<?php
+require 'db.php'; // Asegúrate de que este archivo tenga la conexión a la base de datos
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['usuario']; // Cambia esto a 'usuario' para que coincida con el formulario
+    $password = password_hash($_POST['clave'], PASSWORD_DEFAULT); // Cambia a 'clave'
+
+    $stmt = $conn->prepare("INSERT INTO usuarios (username, password) VALUES (?, ?)");
+    $stmt->bind_param("ss", $username, $password);
+
+    if ($stmt->execute()) {
+        echo "Usuario registrado con éxito.";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    $stmt->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,4 +53,7 @@
         </form>
     </div>
 
-    <script sr
+    <script src="../index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
