@@ -30,7 +30,7 @@ header {
     text-align: center;
 }
 
-.add-to-cart {
+.boton-item {
     background-color: #28a745;
     color: white;
     border: none;
@@ -38,7 +38,7 @@ header {
     cursor: pointer;
 }
 
-.add-to-cart:hover {
+.boton-item:hover {
     background-color: #218838;
 }
 

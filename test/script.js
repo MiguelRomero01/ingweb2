@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Usar event delegation en el contenedor padre
     const cardsContainer = document.getElementById('cards-container');
     cardsContainer.addEventListener('click', function(e) {
-        if (e.target && e.target.classList.contains('add-to-cart')) {
+        if (e.target && e.target.classList.contains('boton-item')) {
             const productName = e.target.getAttribute('data-name');
             const productPrice = e.target.getAttribute('data-price');
             addToCart(productName, productPrice);
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Maneja los clics en el botón "Añadir al carrito"
-    document.querySelectorAll('.add-to-cart').forEach(button => {
+    document.querySelectorAll('.boton-item').forEach(button => {
         button.addEventListener('click', function() {
             const productName = this.getAttribute('data-name');
             const productPrice = this.getAttribute('data-price');
