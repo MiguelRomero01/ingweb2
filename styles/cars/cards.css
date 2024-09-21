@@ -25,14 +25,6 @@
 }
 
 
-.carrito {
-    width: 30%;
-    margin-left: 20px;
-    position: sticky;
-    top: 20px;
-}
-
-
 .card-body {
     text-align: center;
 }
@@ -98,4 +90,9 @@
     font-size: 25px;
     font-weight: bold;
     color: white;
+    transition: all .3s;
+}
+
+.boton-item:hover{
+    background-color: rgb(57, 55, 55);
 }
