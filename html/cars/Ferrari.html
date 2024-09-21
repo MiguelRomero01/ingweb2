@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="/styles/cars/layouts/navbarCars.css">
     <link rel="stylesheet" href="/styles/cars/cards.css">
 
-    <script src="/scripts/carrito-compras/carrito-pruebas.js" async></script>
-
     <!--boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     
@@ -37,17 +35,17 @@
 
     <h2 style="color: red;">Nuestros Ferraris</h2>
 
-  <!-- Sección de productos y carrito -->
-<section class="contenedor d-flex justify-content-between">
-  <div class="cards-container">
+    <!-- cards ferrari -->
     <div id="Card-container">
       <div class="d-flex justify-content-between flex-wrap p-5" id="cards-container">
 
           <div class="card" id="cardAnimation" style="width: 33rem;">
             <img src="https://www.duna.cl/media/2019/06/Ferrari-Enzo-jante-en-alu.jpg" class="card-img-top" alt="Imagen Carro Enzo Ferrari">
             <div class="card-body">
-              <h5 class="titulo-item">Ferrari Enzo Ferrari</h5>
+              <h5 class="card-title">Ferrari Enzo Ferrari (2002-2004)</h5>
               <ul class="card-text">
+
+               
                   <li><strong>Motor:</strong> V12 de 6.0 litros, con una potencia de 660 CV (485 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> 3.14 segundos.</li>
                   <li><strong>Velocidad máxima:</strong> Aproximadamente 350 km/h.</li>
@@ -55,71 +53,80 @@
                   <li><strong>Peso:</strong> 1,365 kg.</li>
                   <li><strong>Diseño:</strong> Creado en honor a Enzo Ferrari, fundador de la marca. Inspirado en la tecnología de la Fórmula 1, utiliza materiales ligeros como la fibra de carbono.</li>
                   <li><strong>Producción:</strong> Solo 400 unidades producidas, lo que lo convierte en uno de los modelos más exclusivos.</li>
-                  <li><strong>Precio:</strong><span class="precio-item">$30</span></li>
+                
+                
             </ul>
+
             </div>
-              <button class="boton-item">Añadir al Carrito</button>
+            <div class="card-body">
+              <button class="add-to-cart" data-name="Ferrari Enzo" data-price="10">Añadir al Carrito</button>
+            </div>
           </div>
       
           <div class="card" id="cardAnimation" style="width: 33rem;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Ferrari_LaFerrari_Front_(17805613483).jpg" class="card-img-top" alt="Imagen Carro La Ferrari">
             <div class="card-body">
-              <h5 class="titulo-item">LaFerrari</h5>
+              <h5 class="card-title">LaFerrari (2013-2016)</h5>
               <ul class="card-text">
+
+                
                   <li><strong>Motor:</strong> Híbrido V12 de 6.3 litros más un motor eléctrico, combinando una potencia total de 963 CV (708 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> Menos de 3 segundos.</li>
                   <li><strong>Velocidad máxima:</strong> 350 km/h.</li>
                   <li><strong>Transmisión:</strong> Automática de doble embrague con 7 velocidades.</li>
                   <li><strong>Peso:</strong> 1,585 kg.</li>
                   <li><strong>Diseño:</strong> Primer Ferrari híbrido de la historia. Utiliza un sistema KERS (similar al de la F1) para recuperar energía. Solo se fabricaron 499 unidades, más una adicional subastada para caridad.</li>
-                  <li><strong>Precio:</strong><span class="precio-item">$40</span></li>
+                
                 </ul>
-              </div>
-              <button class="boton-item">Añadir al Carrito</button>
+
+    
+            </div>
+            <div class="card-body">
+              <button class="add-to-cart" data-name="LaFerrari" data-price="15">Añadir al Carrito</button>
+            </div>
           </div>
       
           <div class="card" id="cardAnimation" style="width: 33rem;">
             <img src="https://www.amarisupercars.com/blobs/stock/1241421/images/5aea709b-4c0c-4afd-b7b6-afd748a4e1f6.jpg?width=2000&height=1333" class="card-img-top" alt="Imagen Carro SF90 Spider">
             <div class="card-body">
-              <h5 class="titulo-item">Ferrari SF90 Spider</h5>
+              <h5 class="card-title">Ferrari SF90 Spider (2020-presente)</h5>
               <ul class="card-text">
+
+                
                   <li><strong>Motor:</strong> Híbrido enchufable, con un motor V8 biturbo de 4.0 litros y tres motores eléctricos, que producen un total de 1,000 CV (735 kW).</li>
                   <li><strong>Aceleración 0-100 km/h:</strong> 2.5 segundos.</li>
                   <li><strong>Velocidad máxima:</strong> 340 km/h.</li>
                   <li><strong>Transmisión:</strong> Automática de doble embrague con 8 velocidades.</li>
                   <li><strong>Peso:</strong> 1,670 kg.</li>
                   <li><strong>Diseño:</strong> Versión descapotable del SF90 Stradale. Su techo retráctil se abre en 14 segundos. Al ser híbrido enchufable, puede recorrer hasta 25 km en modo eléctrico.</li>
-                  <li><strong>Precio:</strong><span class="precio-item">$90</span></li>
+                
                 </div>
-            <button class="boton-item">Añadir al Carrito</button>
+            <ul class="list-group list-group-flush" style="background-color: black;"></ul>
+              
+  
+            </div>
+
+            <div class="card-body">
+              <button class="add-to-cart" data-name="SF90 Spider" data-price="20">Añadir al Carrito</button>
+            </div>
           </div>
 
       </div>
     </div>
+    
+    <!-- Carrito de Compras -->
+    <div class="cart-items" id="cart-items" style="display:none;">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+    <button id="clear-cart">Vaciar Carrito</button>
   </div>
-
-  <!-- Carrito de compras -->
-  <div class="carrito">
-    <div class="header-carrito">
-      <h3>Tu carrito</h3>
-    </div>
-
-    <div class="carrito-items">
-      <!--Se insertan los carros desde el JS-->
-    </div>
-
-    <div class="carrito-total">
-      <div class="fila">
-        <strong>Tu total</strong>
-        <span class="carrito-precio-total">$0</span>
-      </div>
-      <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
-    </div>
-  </div>
-</section>
 
     <!-- chatbot -->
     <script src="/scripts/chatbot/chatbot.js"></script>
     <script src="/scripts/navscroll.js"></script>
+
+    <!-- carrito de compras -->
+    <script src="/scripts/carrito-compras/carrito-compras.js"></script>
 </body>
 </html>
