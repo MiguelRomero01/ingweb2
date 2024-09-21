@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ss", $username, $password);
 
     if ($stmt->execute()) {
-        echo "<div class='alert alert-success text-center'>Usuario registrado con éxito.</div>";
+        echo "Usuario registrado con éxito.";
     } else {
-        echo "<div class='alert alert-danger text-center'>Error: " . $stmt->error . "</div>";
+        echo "Error: " . $stmt->error;
     }
 
     $stmt->close();
@@ -24,79 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: url('https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7Zl2dioCxkF%25vUqCNwuWXsOs8IeV6iTxjgzhRc2GaWqA7fQr7DOJtWFnQbNWMbdJ6gzyel2Pz3BZhUynAYM') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Arial', sans-serif;
-        }
-        .register-container {
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
-            width: 100%;
-            max-width: 450px;
-            color: white;
-        }
-        .register-container h1 {
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-align: center;
-            color: #e0e0e0; /* Gris claro metálico */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .form-control {
-            border-radius: 30px;
-            background-color: rgba(255, 255, 255, 0.15);
-            color: white;
-            border: 1px solid #bdc3c7; /* Borde gris claro */
-            transition: background-color 0.3s ease-in-out;
-        }
-        .form-control:focus {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-        .form-control::placeholder {
-            color: #95a5a6; /* Placeholder en gris */
-        }
-        .btn-primary {
-            background-color: #ff4757; /* Rojo Porsche */
-            border: none;
-            border-radius: 30px;
-            padding: 15px;
-            font-weight: bold;
-            color: white;
-            width: 100%;
-            font-size: 18px;
-        }
-        .btn-primary:hover {
-            background-color: #e84118;
-            transition: 0.3s;
-        }
-        .form-label {
-            font-weight: bold;
-            color: #bdc3c7; /* Color gris claro */
-        }
-        .form-check-label {
-            color: #ecf0f1;
-        }
-        .alert {
-            margin-top: 15px;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/register.css">
 </head>
 <body>
-    <div class="register-container">
-        <h1>Regístrate</h1>
+    <div class="container mt-5">
         <form action="register.php" method="post">
+            <h1 class="text-center">Regístrate</h1>
+
             <div class="mb-3">
                 <label for="Usuario" class="form-label">Usuario:</label>
                 <input type="text" id="Usuario" name="usuario" class="form-control" placeholder="Ingrese su usuario" required>
@@ -118,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
